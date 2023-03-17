@@ -29,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Satoshi", "sans-serif"],
+        asap:['Asap', 'sans-serif']
       },
 
       fontWeight: {
