@@ -5,7 +5,7 @@ export function Form() {
     <article className=" lg:w-[55%] text-white">
       <form action="" className="relative bg-[#1D2939] rounded-2xl p-8 md:p-16">
         <h3 className=" text-xl font-extrabold mb-8">
-          Book a Consultation with us
+          Skip Waitlist, Get Access Now!
         </h3>
         <InputElement text={"Enter your full name"} />
         <InputElement text={"Enter your work email"} />

@@ -39,6 +39,7 @@ const Access = () => {
             src="images/Star 3.svg"
             alt="star"
             className="absolute w-6 -top-14 right-8 "
+            
           />
         </h1>
         <p className=" relative font-medium  text-center">

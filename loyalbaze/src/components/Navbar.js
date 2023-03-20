@@ -37,13 +37,13 @@ const Navbar = () => {
               <h3 className="text-white text-xl"> Feature</h3>
             </Link>
           </div>
-          <button className="  p-[.1rem] bg-gradient-to-r from-darkGradient to-lightGradient rounded-full">
+          <button className="  p-[.1rem] bg-gradient-to-r from-darkGradient to-lightGradient rounded-full focus:outline-none">
             <span className="nav-btn fsize  block text-white px-5 py-2 rounded-full bg-[#121B27]">
               <Link
                 to="Access"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-100}
                 duration={500}
                 className="pointer"
               >
