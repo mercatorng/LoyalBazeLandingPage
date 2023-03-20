@@ -5,6 +5,7 @@ module.exports = {
     screens: {
       xxs: "280px",
       xs: "360px",
+      ss: "391px",
       xsm: "412px",
       sm: "480px",
       smd: "540px",
@@ -14,7 +15,6 @@ module.exports = {
       xlg: "992px",
       large: "1170px",
       exl: "1280px",
-      xl: "1440px",
     },
     extend: {
       colors: {
@@ -26,6 +26,8 @@ module.exports = {
         androidPurple: "#A75FD2",
         white: " #FCFCFC",
         borderColor: " rgba(221, 221, 221, 0.5)",
+        featureColor: "rgba(255, 255, 255, 0.7)",
+        bgGreen: "#20AC5B",
       },
       fontFamily: {
         sans: ["Satoshi", "sans-serif"],
