@@ -48,7 +48,10 @@ const Features = () => {
     <article className=" grid gap-x-4 gap-y-16 place-items-center md:grid-cols-3">
       {featuresData.map(({ icon, id, header, content }) => {
         return (
-          <div className=" relative shadow-lg max-w-[25rem] h-[18.25rem] rounded-xl p-4 pt-6 bg-[#FFFFFF] flex flex-col gap-y-2">
+          <div
+            key={id}
+            className=" relative shadow-lg max-w-[25rem] h-[18.25rem] rounded-xl p-4 pt-6 bg-[#FFFFFF] flex flex-col gap-y-2"
+          >
             {/* number */}
             <p className=" absolute right-4 -top-8 text-7xl opacity-5 font-700 font-asap">
               {id}

@@ -4,19 +4,21 @@ const Footer = () => {
       {/* top border line*/}
       <div className="   bg-gradient-to-r from-[#5404FF] to-[#BD3BD2F0] h-[1px] "></div>
       {/* content */}
-      <div className=" w-fit flex flex-col pt-6  gap-y-4 mr-auto ml-auto lg:flex-row lg:w-full lg:justify-between ">
-        <p className=" font-bold text-center lg:order-2">
+      <div className=" p-4 container md:max-w-6xl md:mx-0 md:gap-x-28 exl:max-w-[1400px]  mx-auto max-w-sm flex flex-col space-y-5 md:flex-row  md:items-center md:space-y-0  md:justify-between md:gap-x-8 la">
+        <p className=" font-bold md:order-1  exl:mr-[4rem]  ">
           Loyalbaze is almost here.
         </p>
-        <div className=" flex gap-x-4 items-start  lg:w-[30%] lg:order-0">
-          <img src="images/Home.svg" alt="home" />
-          <p>
+        <div className=" flex gap-x-4 items-center  lg:w-[30%]  ">
+          <img src="images/Home.svg" alt="home" className="" />
+          <p className="md:order-0 max-w-md lg:max-w-md">
             2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos,
             Nigeria.
           </p>
         </div>
-        <div className="  flex gap-x-4 items-center lg:items-start w-fit mr-auto ml-auto lg:m-0 lg:order-2">
-          <img src="images/Phone.svg" alt="phone" />
+        <div className="flex space-x-4 items-center md:order-2">
+          <div>
+            <img src="images/Phone.svg" alt="phone" className="w-fit" />
+          </div>
           <p>+234 903 618 9485</p>
         </div>
       </div>
@@ -24,4 +26,6 @@ const Footer = () => {
   );
 };
 
+// flex flex-col pt-6 gap-y-4 mr-auto ml-auto lg:flex-row lg:w-full lg:justify-between
+//  flex gap-x-4 items-center lg:items-start w-fit mr-auto ml-auto lg:m-0 lg:order-2">
 export default Footer;

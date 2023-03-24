@@ -33,7 +33,7 @@ const HeroForm = () => {
             <input
               type="text"
               placeholder="Tell us your name"
-              className="btn-width w-[300px] sm:w-96 pr-[1rem] w-[100%] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md font-501 focus:outline-none text-white"
+              className="btn-width xs:w-[300px] xxs:w-[100%] sm:w-96 pr-[1rem] w-[100%] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md font-501 focus:outline-none text-white"
               ref={nameContainer}
             />
           </div>
@@ -42,7 +42,7 @@ const HeroForm = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="btn-width w-[300px] sm:w-96 pr-[1rem] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md  focus:outline-none font-501 text-white"
+              className="btn-width xxs:w-[100%] xs:w-[300px] sm:w-96 pr-[1rem] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md  focus:outline-none font-501 text-white"
               ref={emailContainer}
             />
           </div>
@@ -56,7 +56,7 @@ const HeroForm = () => {
       >
         <button
           type="submit"
-          className=" text-white w-[300px] sm:w-96  md:w-96 bg-gradient-to-r from-darkGradient to-lightGradient rounded-full p-3 focus:outline-none"
+          className=" text-white  xs:w-[300px] xxs:w-[100%] sm:w-96  md:w-96 bg-gradient-to-r from-darkGradient to-lightGradient rounded-full p-3 focus:outline-none"
           onClick={messageOpen}
         >
           <p>Get Early Access</p>{" "}
