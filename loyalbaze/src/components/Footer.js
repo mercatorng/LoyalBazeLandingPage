@@ -1,10 +1,11 @@
 const Footer = () => {
   return (
-    <footer className=" bg-[#F7FAFC] relative px-[4vw] pt-0 py-10 ">
+    <footer className=" bg-[#F7FAFC] relative px-[4vw] pt-0 py-10 " data-aos="fade-up"
+    data-aos-duration="2000">
       {/* top border line*/}
       <div className="   bg-gradient-to-r from-[#5404FF] to-[#BD3BD2F0] h-[1px] "></div>
       {/* content */}
-      <div className=" p-4 container md:max-w-6xl md:mx-0 md:gap-x-28 exl:max-w-[1400px]  mx-auto max-w-sm flex flex-col space-y-5 md:flex-row  md:items-center md:space-y-0  md:justify-between md:gap-x-8 la">
+      <div className=" p-4 container md:max-w-[992px] large:max-w-[1126px] md:mx-0 md:gap-x-28 exl:max-w-[1190px]  mx-auto max-w-sm flex flex-col space-y-5 md:flex-row  md:items-center md:space-y-0  md:justify-between md:justify-center md:gap-x-8 la">
         <p className=" font-bold md:order-1  exl:mr-[4rem]  ">
           Loyalbaze is almost here.
         </p>
