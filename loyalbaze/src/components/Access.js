@@ -30,9 +30,9 @@ const Access = () => {
           />
           {/* ellipse */}
           <img
-            src="images/Ellipse 37.svg"
+            src="images/roundEllipse.svg"
             alt="ellipse"
-            className="absolute -top-16 left-8 w-[4rem] lg:-top-[12rem] md:-top-[7rem]"
+            className="absolute animate-spin -top-40 left-8  lg:-top-[12rem] md:-top-[7rem]"
           />
           {/* star */}
           <img

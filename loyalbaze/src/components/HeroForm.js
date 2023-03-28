@@ -22,18 +22,18 @@ const HeroForm = () => {
       {/* hero form  */}
       <article className="relative">
         {/* vector  */}
-        <div className="absolute bottom-0 right-[1rem] w-[10%] smd:bottom-0 smd:right-[2rem] smax:right-[4rem] md:right-[6rem] lg:right-[9.5rem] xlg:right-[10rem] large:right-[14rem] exl:right-[16rem] ">
+        <div className="animate-ping absolute bottom-0 right-[1rem] w-[10%] smd:bottom-0 smd:right-[2rem] smax:right-[4rem] md:right-[6rem] lg:right-[9.5rem] xlg:right-[10rem] large:right-[14rem] exl:right-[16rem] ">
           <img src="./images/Vector.svg" alt="" className="" />
         </div>
         {/* end of vector  */}
         {/* forms-center */}
-        <div className="mt-12 grid place-items-center space-y-6 ">
+        <div className="mt-8 grid place-items-center space-y-6 ">
           <div className="relative flex items-center">
             <BiUserCircle className="text-3xl absolute ml-2 text-white" />
             <input
               type="text"
               placeholder="Tell us your name"
-              className="btn-width xs:w-[300px] xxs:w-[100%] sm:w-96 pr-[1rem] w-[100%] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md font-501 focus:outline-none text-white"
+              className="btn-width xs:w-[300px] xxs:w-[100%] sm:w-96 pr-[1rem] w-[100%] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md font-501 text-white focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-900"
               ref={nameContainer}
             />
           </div>
@@ -42,7 +42,7 @@ const HeroForm = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="btn-width xxs:w-[100%] xs:w-[300px] sm:w-96 pr-[1rem] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md  focus:outline-none font-501 text-white"
+              className="btn-width xxs:w-[100%] xs:w-[300px] sm:w-96 pr-[1rem] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md  font-501 text-white focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-900"
               ref={emailContainer}
             />
           </div>
@@ -64,7 +64,7 @@ const HeroForm = () => {
       </div>
 
       {/* members  */}
-      <div className=" flex gap-[6rem] items-center justify-center mt-8">
+      <div className=" flex gap-[6rem] items-center justify-center ">
         {/* members-center  */}
         <article className="flex mt-4 relative ">
           <div className=" absolute-left-4 rounded-[50%] w-8 h-8 bg-androidBlue grid place-items-center z-40">

@@ -9,3 +9,13 @@
 .pointer {
   cursor: pointer;
 }
+
+.text{
+  background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+opacity: 0.1;
+}

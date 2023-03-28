@@ -50,12 +50,14 @@ const Features = () => {
         return (
           <div
             key={id}
-            className=" relative shadow-lg max-w-[25rem] h-[18.25rem] rounded-xl p-4 pt-6 bg-[#FFFFFF] flex flex-col gap-y-2"
+            className=" relative shadow-lg max-w-[25rem] h-[15.25rem] rounded-xl p-4 pt-6 bg-[#FFFFFF] flex flex-col gap-y-2"
           >
             {/* number */}
-            <p className=" absolute right-4 -top-8 text-7xl opacity-5 font-700 font-asap">
+            <div>
+            <p className=" absolute text right-4 -top-8 text-7xl font-700 font-asap">
               {id}
             </p>
+            </div>
             {/* icon */}
             <div className=" bg-blue-100 h-[48px] w-[48px] rounded-lg grid place-items-center">
               <img src={`images/${icon}`} alt={header} />

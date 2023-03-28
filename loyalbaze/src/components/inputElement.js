@@ -5,8 +5,7 @@ export const InputElement = ({ text }) => {
         <input
           type="text"
           placeholder={text}
-          className=" absolute bg-transparent left-4 outline-none  placeholder:text-light placeholder:font-thin"
-        />
+          className=" absolute bg-transparent left-4 outline-none  placeholder:text-light placeholder:font-thin focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-900" />
       </div>
     );
   };
