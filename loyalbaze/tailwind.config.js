@@ -15,6 +15,7 @@ module.exports = {
       xlg: "992px",
       large: "1170px",
       exl: "1280px",
+      pcXl: "1360PX"
     },
     extend: {
       colors: {

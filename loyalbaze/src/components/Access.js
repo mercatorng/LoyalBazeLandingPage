@@ -2,26 +2,27 @@ import { Form } from "./form";
 
 const Access = () => {
   return (
-    <div className=" relative lg:flex justify-between items-center lg:max-w-[992px] large:max-w-[1150px] mx-auto">
+    <div className=" relative lg:flex justify-between items-center large:translate-x-[4.3%]">
       {/* DECORATION */}
       {/* vector */}
       <img
         src="images/Highlight 2.svg"
         alt="vector"
-        className="absolute hidden lg:block  right-[10%] -top-[6%] "
+        className="absolute hidden lg:block  right-[7%] -top-[7.5%] "
       />
       <img
         src="images/Highlight 2.svg"
         alt="vector"
-        className="absolute hidden lg:block  left-[38%] -top-[1%] "
+        className="absolute hidden lg:block  left-[48%] -top-[1%] "
       />
 
       {/*END OF DECORATION */}
 
       {/* content */}
-      <article className=" pt-8 mb-10  lg:mb-40 lg:w-[40%] " data-aos="fade-right"
+      <article className=" pt-8 mb-10  lg:mb-40 lg:w-[40%] lg:container lg:mx-auto lg:max-w-lg"
+      data-aos="fade-right"
     data-aos-duration="2000">
-        <h1 className=" relative w-fit font-700 text-5xl text-center mb-20 mx-auto  lg:mx-0">
+        <h1 className=" large:translate-x-[-30%] relative w-fit font-700 text-5xl text-center mb-20 mx-auto  lg:mx-0">
           Priority Access
           {/* line */}
           <img
@@ -42,7 +43,7 @@ const Access = () => {
             className="absolute w-6 -top-14 right-8 animate-ping "
           />
         </h1>
-        <p className="p-8 text-[#101010] relative text-lg large:text-[1.3rem] exl:max-w-md sm:max-w-2xl text-center mx-auto lg:mx-0 lg:p-0 lg:text-left md:text-xl md:max-w-4xl lg:max-w-xl large:mt-16 ">
+        <p className="large:translate-x-[-22%] p-8 text-[#101010] relative text-lg large:text-[1.3rem] exl:max-w-md sm:max-w-2xl text-center mx-auto lg:mx-0 lg:p-0 lg:text-left md:text-xl md:max-w-4xl lg:max-w-xl large:mt-16 ">
             Get ready to revolutionize the way you interact with your customers
             and drive sales with Loyalbaze. Skip the waitlist and get exclusive
             priority access to LoyalBaze. Limited slots available. Please tell

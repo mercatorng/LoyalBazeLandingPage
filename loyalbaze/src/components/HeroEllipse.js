@@ -4,11 +4,11 @@ const HeroEllipse = () => {
   return (
     <article>
       {/* fullEllipse  */}
-      <div className=" animate-bounce non absolute top-44 left-2 w-[150px] smd:w-[140px]    lg:w-[170px] lg:translate-x-4 xl:translate-x-20 ">
+      <div className=" animate-bounce temporary-bounce non absolute top-44 left-2 w-[150px] smd:w-[140px]    lg:w-[170px] lg:translate-x-4 xl:translate-x-20 ">
         <img src="./images/Ellipse 37.svg" alt="" className="" />
       </div>
       {/* fullEllipse  */}
-      <div className="animate-bounce non absolute w-[90px] top-[5rem] right-8 md:right-[10rem] md:top-[6rem] large:top-[6rem] large:right-56 xl:right-96 xl:top-[-1.8rem] ">
+      <div className="animate-bounce temporary-bounce non absolute w-[90px] top-[5rem] right-8 md:right-[10rem] md:top-[6rem] large:top-[6rem] large:right-56 xl:right-96 xl:top-[-1.8rem] ">
         <img src="./images/Ellipse 37.svg" alt="" className="" />
       </div>
       {/* star  */}

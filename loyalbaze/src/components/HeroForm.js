@@ -28,8 +28,8 @@ const HeroForm = () => {
       {/* hero form  */}
       <article className="relative">
         {/* vector  */}
-        <div className="animate-ping absolute bottom-0 right-[1rem] w-[10%] smd:bottom-0 smd:right-[2rem] smax:right-[4rem] md:right-[6rem] lg:right-[9.5rem] xlg:right-[10rem] large:right-[14rem] exl:right-[16rem] ">
-          <img src="./images/Vector.svg" alt="" className="" />
+        <div className="absolute bottom-[12rem] right-[1rem] w-[10%]  smd:right-[2rem] smax:right-[4rem] md:right-[6rem] lg:right-[9.5rem] xlg:right-[10rem] large:bottom-[15rem] large:right-[14rem] exl:right-[16rem] ">
+          <img src="./images/Vector.svg" alt="" />
         </div>
         {/* end of vector  */}
 
@@ -64,8 +64,7 @@ const HeroForm = () => {
       >
         <button type="submit"
           className=" text-white  xs:w-[300px] xxs:w-[100%] sm:w-96  md:w-96 bg-gradient-to-r from-darkGradient to-lightGradient rounded-full p-3 focus:outline-none"
-            data-aos="fade-up"
-          data-aos-duration="2000"
+            
         >
           <p>Get Early Access</p>{" "}
         </button>

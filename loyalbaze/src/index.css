@@ -19,3 +19,13 @@ text-fill-color: transparent;
 
 opacity: 0.1;
 }
+
+.end {
+  justify-self : end
+}
+.temporary-bounce {
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+

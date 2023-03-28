@@ -11,7 +11,7 @@ export function Form() {
     <>
       {/* Access form  */}
       <div
-        className="md:p-12 max-w-xl mx-auto p-4  lg:w-[80%] lg:mx-0 large:w-[90%] xl:w-[100%]  "
+        className="md:p-12 end max-w-[620px] mx-auto p-4 lg:w-[80%] lg:mx-0  large:w-[90%] xl:w-[100%]"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
