@@ -47,7 +47,7 @@ const Access = () => {
             Get ready to revolutionize the way you interact with your customers
             and drive sales with Loyalbaze. Skip the waitlist and get exclusive
             priority access to LoyalBaze. Limited slots available. Please tell
-            us a bit about your business and needs and of our consultants will
+            us a bit about your business and needs and one of our consultants will
             be in touch Immediately!
             <img src="images/shadowEllipse.svg" className="absolute top-[-18rem] left-[-6rem] "/>
           <img
