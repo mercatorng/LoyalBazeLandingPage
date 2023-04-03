@@ -42,11 +42,4 @@ const SuccessMessage = () => {
   );
 };
 
-{
-  /* <div className=" shadow-2xl bg-bgGreen rounded-[80%] w-[4rem] h-[4rem] flex items-center justify-center">
-  <img src="./images/Vector 3.svg" alt="checkmark" />
-</div>; */
-}
-
-// "w-[100%] h-[100%] bgModal fixed z-50 flex items-center justify-center"
 export default SuccessMessage;

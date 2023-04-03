@@ -18,7 +18,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={800}
               className="pointer"
             >
               <h3 className="text-white text-xl"> Home</h3>
