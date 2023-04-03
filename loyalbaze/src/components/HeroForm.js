@@ -42,6 +42,7 @@ const HeroForm = () => {
             <input
               type="text"
               placeholder="Tell us your name"
+              spellCheck="false"
               className="btn-width xs:w-[300px] xxs:w-[100%] sm:w-96 pr-[1rem] w-[100%] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md font-501 text-white focus:outline-none focus:border-transparent focus:ring-2 focus:ring-purple-600"
               ref={nameContainer} value={name}  onChange={changeName}
             />
@@ -50,6 +51,7 @@ const HeroForm = () => {
             <BiEnvelope className="absolute text-3xl ml-2 text-white" />
             <input
               type="email"
+              spellCheck="false"
               placeholder="Enter your email address"
               className="btn-width xxs:w-[100%] xs:w-[300px] sm:w-96 pr-[1rem] pl-12 bg-transparent placeholder:text-white border border-white p-2 rounded-md  font-501 text-white focus:outline-none focus:border-transparent focus:ring-2 focus:ring-purple-600"
               ref={emailContainer} value={email} onChange={changeEmail}
