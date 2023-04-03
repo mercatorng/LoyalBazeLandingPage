@@ -85,6 +85,9 @@ export function Form() {
                   <option value="South Africa" className="text-slate-600">
                     Finland
                   </option>
+                  <option value="South Africa" className="text-slate-600">
+                    Canada
+                  </option>
                 </select>
               </div>
               {/* input  */}
