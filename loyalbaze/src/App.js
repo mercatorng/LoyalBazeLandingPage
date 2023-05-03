@@ -6,7 +6,7 @@ import { Footer } from "./components";
 function App() {
   return (
     <section>
-      <SuccessMessage />
+      <SuccessMessage/>
       <Navbar />
       <Hero />
       <FeaturesSection />

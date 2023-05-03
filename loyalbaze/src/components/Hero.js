@@ -17,8 +17,8 @@ const Hero = () => {
             <div data-aos="fade-right"
           data-aos-duration="2000" >
             <h3 className="relative sm:p-4 leading-12 text-white font-sans text-[2.5rem] capitalize font-900 text-center md:text-5xl md:max-w-3xl mx-auto ">
-              Turn your best customers into{" "}
-              <span className="text-androidPurple">Loyal fans</span>
+              Turn your customers into{" "}
+              <span className="text-androidPurple">Brand Advocates</span>
             </h3>
             {/* hero-text  */}
             <div className="">
