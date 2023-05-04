@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react"
 import { useGlobalContext } from "../context"
+import axios from "axios"
+import SuccessMessage from "./SuccessMessage"
 
 export function Form() {
   const {accessName,workEmail,
@@ -6,7 +9,27 @@ export function Form() {
      submitRequest,companyName,
     changeMessage,changeWorkEmail, 
     changeMobileNumber,changeAccessName,
-    changeCompanyName, } = useGlobalContext()
+    changeCompanyName, country, changeCountry} = useGlobalContext()
+
+    const [countries, setCountries] = useState([])
+
+    const url = 'https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json'
+
+    const fetchCountry =async (url)=>{
+    try {
+      const response = await axios.get(url);
+      const data = await response.data;
+      setCountries(data)
+    } catch (error) {
+      console.log(error.response);
+    }
+    }
+    useEffect(()=>{
+      fetchCountry(url)
+    }, [])
+   const newCountry =  [...new Set(countries.map(item => item.country))]
+  //  console.log(countries);
+  //  console.log(newCountry);
   return (
     <>
       {/* Access form  */}
@@ -29,6 +52,7 @@ export function Form() {
               <div>
                 <input
                   type="text"
+                  spellCheck="false"
                   placeholder="Enter your full name"
                   className="p-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white"
                 value={accessName} onChange={changeAccessName}
@@ -38,6 +62,7 @@ export function Form() {
               <div>
                 <input
                   type="email"
+                  spellCheck="false"
                   placeholder="Enter your work email"
                   className="p-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white font-400"
              value={workEmail} onChange={changeWorkEmail}
@@ -47,6 +72,7 @@ export function Form() {
               <div>
                 <input
                   type="text"
+                  spellCheck="false"
                   placeholder="Mobile number"
                   className="p-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white"
                value={mobileNumber} onChange={changeMobileNumber}
@@ -56,6 +82,7 @@ export function Form() {
               <div>
                 <input
                   type="text"
+                  spellCheck="false"
                   placeholder="Company Name"
                   className="p-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white"
                 value={companyName} onChange={changeCompanyName}
@@ -68,32 +95,21 @@ export function Form() {
                   name="countries"
                   placeholder="Select Country"
                   className="p-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white"
+                  value={country} onChange={changeCountry}
                 >
-                  <option value="Select Country">Select Country</option>
-                  <option value="Nigeria" className="text-slate-600">
-                    Nigeria
-                  </option>
-                  <option value="Ghana" className="text-slate-600">
-                    Ghana
-                  </option>
-                  <option value="South Africa" className="text-slate-600">
-                    South Africa
-                  </option>
-                  <option value="South Africa" className="text-slate-600">
-                    United States
-                  </option>
-                  <option value="South Africa" className="text-slate-600">
-                    Finland
-                  </option>
-                  <option value="South Africa" className="text-slate-600">
-                    Canada
-                  </option>
+                   <option value="Select Country">Select Country</option>
+                 {newCountry.map(function (item, index) {
+                   return  <option value={item} className="text-slate-600" key={index}>
+                  {item}
+                 </option>
+                 })}
                 </select>
               </div>
               {/* input  */}
               <div>
                 <input
                   type="text"
+                  spellCheck="false"
                   placeholder="Drop A Message..."
                   className=" pb-28 pt-2 px-3 border-2 border-slate-600 rounded-md bg-transparent focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-1000 w-[98%] placeholder:text-white text-white "
                 value={message} onChange={changeMessage}
@@ -122,34 +138,19 @@ export function Form() {
 
 
 
-// <article className=" lg:w-[50%] text-white">
-//       <form action="" className="relative bg-[#1D2939] rounded-2xl p-8 md:p-16 max-w-xl mx-auto">
-//         <h3 className=" text-xl font-extrabold mb-8">
-//           Skip Waitlist, Get Access Now!
-//         </h3>
-//         <InputElement text={"Enter your full name"} className="focus:outline-none focus:border-transparent focus:ring-2 focus:ring-indigo-900" />
-//         <InputElement text={"Enter your work email"} />
-//         <InputElement text={"Mobile number"} />
-//         <InputElement text={"Company Name"} />
-//         <div className=" mb-8 h-[3rem] relative  items-center   border px-[12px] py-2 border-light rounded-md mr-auto ml-auto">
-//           <select className=" w-full bg-[#1D2939]">
-//             <option value={`Select Country`}>Select Country</option>
-//           </select>
-//         </div>
-//         <div className=" mb-8 relative  items-center   border px-[12px] py-2 border-light rounded-md mr-auto ml-auto">
-//           <textarea
-//             placeholder="Drop a message....."
-//             className=" focus:outline-none block w-full min-h-[5rem] bg-[#1D2939] placeholder:text-light placeholder:font-thin resize-none"
-//           ></textarea>
-//         </div>
-//         <button className=" mb-4 w-full bg-gradient-to-r from-[#5404FF] to-[#BD3BD2F0] rounded-full h-12 mr-auto ml-auto block ">
-//           Send Request
-//         </button>
-        {/* star */}
-        <img
-          src="images/Star 3.svg"
-          alt="star"
-          className="absolute -bottom-12 right-0"
-        />
-//       </form>
-//     </article>
+
+// <option value="Ghana" className="text-slate-600">
+//   Ghana
+// </option>
+// <option value="South Africa" className="text-slate-600">
+//   South Africa
+// </option>
+// <option value="South Africa" className="text-slate-600">
+//   United States
+// </option>
+// <option value="South Africa" className="text-slate-600">
+//   Finland
+// </option>
+// <option value="South Africa" className="text-slate-600">
+//   Canada
+// </option>
